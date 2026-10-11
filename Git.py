@@ -19,3 +19,5 @@
 #git add file.name
 
 #commit:: it is record of change... git commit -m "some msg"
+#
+#Push command:: git push origin main
