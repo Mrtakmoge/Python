@@ -4,7 +4,8 @@
 # used to track history of code,to collabrat
 
 #GitHub::Website that allows developers to store and manage their  code using Git.
-## Clone:
+##Commands
+# Clone:
 # git clone "some link"
 
 #Status:: git status
