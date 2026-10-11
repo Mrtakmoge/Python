@@ -20,4 +20,4 @@
 
 #commit:: it is record of change... git commit -m "some msg"
 #
-#Push command:: git push origin main
+#Push command:upload local repo content to remote repo: git push origin main
