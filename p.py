@@ -1,0 +1,5 @@
+f1=input("Enter first name:")
+last=input("Enter last name:")
+age=int(input("Enter age:"))
+height=int(input("Enter height:"))
+print(f1+last,age)
