@@ -21,3 +21,16 @@
 #commit:: it is record of change... git commit -m "some msg"
 #
 #Push command:upload local repo content to remote repo: git push origin main
+
+#WorkFlow::
+#           Github repo
+#               |
+#               clone
+#               |
+#               changes
+#               |
+#               git add filename
+#               |
+#               git commit -m"updated"
+#               |
+#               git push origin main
