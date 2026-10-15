@@ -1,30 +1,33 @@
 
-dict={}
+contact={}
 
 def addcontact():
-    global dict
-    n=int(input("ENter the no. of contact you want to ass:"))
+    global contact
+    n=int(input("ENter the no. of contact you want to add:"))
     for i in range(n):
         name=input("Enter contact name:")
         mob=int(input("Enter Mobile number:"))
-        dict[name]=mob
+        contact[name]=mob
         print("="*10)
         print("contact added successfully...")
         
 def showallcontact():
-    global dict
-    if len(dict)==0:
+    global contact
+    if len(contact)==0:
         print("No contacts")
     else:
-        for name,value  in dict.items():
+        for name,value  in enumerate(contact.items()):
             print(name,value)
     
 def deletecontact():
-    global dict
-    key=input("Enter name to delete:")
-    dict.pop(key)  
-    print("="*10)
-    print("Delete successful") 
+    global contact
+    for i in enumerate(contact.items()):
+            print(i)
+    n=list(contact.keys())
+    i=int(input("Enter index num to delete::"))
+    contact.pop(n[i])
+    print("Contact removed successfully...")
+ 
         
 
 while True:
@@ -33,11 +36,21 @@ while True:
     print("3.delete contact")
     choice=int(input("ENter your option: "))
     if choice==1:
+        print("="*20)
         showallcontact()
+        print("="*20)
     elif choice==2:
+        print("="*20)
         addcontact()
+        print("="*20)
     elif choice==3:
+        print("="*20)
         deletecontact()
+        print("="*20)
+    elif choice==4:
+        print("="*20)
+        print("Program ended....")
+        exit()
     else:
         print("Invalid option")
             
